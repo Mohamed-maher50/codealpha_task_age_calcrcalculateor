@@ -1,0 +1,89 @@
+/* custom styles */
+body {
+  padding: 4em;
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 13px/1.4 Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode",
+    Verdana, sans-serif;
+  overflow: hidden;
+}
+
+label {
+  display: block;
+}
+#form {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 320px;
+}
+input {
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 190px;
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+input::placeholder {
+  color: #000;
+}
+button {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+}
+
+button:active {
+  background-color: #06b;
+  scale: 0.9;
+}
+.alertMessage {
+  padding: 5px;
+  position: absolute;
+  background-color: rgb(52, 160, 92);
+  color: white;
+  top: -50%;
+  width: 75%;
+  font-size: 20px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: rgba(35, 193, 0, 0.25) 0px 5px 10px 2px;
+  transition: 0.3s ease-in-out;
+}
+.alertMessage p {
+  text-transform: capitalize;
+  text-align: center;
+}
+.alertMessage p span {
+  color: #000;
+  font-weight: bold;
+}
+.closeBtn {
+  float: right;
+  margin-left: 18px;
+  font-size: 30px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
